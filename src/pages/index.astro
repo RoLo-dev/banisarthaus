@@ -1,6 +1,8 @@
 ---
 	import Layout from '../layouts/Layout.astro';
 	import Header from '../components/Header.astro';
+
+	import HeroImage from '../assets/images/ceramic-painting-hero.png';
 ---
 
 <Layout>
@@ -18,7 +20,7 @@
         </div>
 
         <figure class="hero-image">
-            <img class="pics" src="images/hero-illustration.svg" alt="Ceramic Painting">
+            <img class="pics" src={HeroImage.src} alt="Ceramic Painting">
 		</figure>
     </section>
 </Layout>
