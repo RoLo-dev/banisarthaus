@@ -8,20 +8,45 @@
 <Layout>
 	<Header />
 
-	<section class="hero">
-        <div class="hero-content">
+	<section class="wrapper hero">
+        <div class="hero-container">
 
-            <h1>Coming Soon</h1>
-            <p>Offering ceramic painting weekly workshops and more</p>
+			<div class="hero-text">
+				<h1>Coming Soon</h1>
+				<p>Offering ceramic painting, weekly workshops and more</p>
+			</div>
 
         </div>
 
-        <figure class="hero-image">
+        <!-- <figure class="hero-image">
             <img class="pics" src={HeroImage.src} alt="Ceramic Painting">
-		</figure>
+		</figure> -->
     </section>
 </Layout>
 
 <style>
-	
+	.hero{
+		height: 800px;
+		background-image: url('../assets/images/ceramic-painting-hero.png');
+		background-size: cover;
+		background-position: right;
+		background-repeat: no-repeat;
+	}
+	.hero-container h1{
+		font-family: var(--secondary-font);
+		font-size: 72px;
+		margin-bottom: 24px;
+	}
+	.hero-container p{
+		max-width: 500px;
+		font-size: 1.25rem;
+		line-height: 1.8;
+	}
+	.hero-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		height: 100%;
+	}
 </style>
