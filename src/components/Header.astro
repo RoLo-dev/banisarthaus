@@ -3,19 +3,56 @@ import logo from '../assets/images/BanisArtHaus-logo.png';
 ---
 
 <header class="header">
+    <div class="wrapper header-wrapper">
+        <figure class="logo">
+            <img class="pics" src={logo.src} alt="Bani's Art Haus logo">
+        </figure>
+    
+        <nav class="nav">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    
+        <a href="#" class="btn-contact">Contact</a>
+    </div>
 
-    <figure class="logo">
-        <img class="pics" src={logo.src} alt="Bani's Art Haus logo">
-    </figure>
-
-    <nav class="nav">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact Us</a>
-    </nav>
-
-    <a href="#" class="btn-contact">
-        Contact
-    </a>
 
 </header>
+
+<style>
+    header{
+        padding: 1.5rem 0;
+        background-color: #fff;
+    }
+    .header-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{width: 220px;}
+    .nav{
+        max-width: 400px;
+        display: flex;
+        gap: 1.25rem;
+    }
+    .nav a{
+        text-decoration: none;
+        color: var(--dark-plum);
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+    }
+    .btn-contact{
+        background: var(--dark-pink);
+        color: white;
+        padding: 16px 28px;
+        border-radius: 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .05rem;
+    }
+    .btn-contact:hover{background: var(--dark-plum);}
+
+
+</style>

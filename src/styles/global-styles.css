@@ -1,9 +1,17 @@
 :root{
     --font-size: 16px;
-    /* --main-font:;
-    --secondary-font:; */
-    --hot-pink: #F7ACB8;
-    --cream: #F2EFE8;
+    --main-font: "Google Sans", sans-serif;
+    --secondary-font: "Playfair Display", serif;
+    --dark-pink: #bb8588;
+    --dark-plum: #4c3842;
+    --cream: #f7f5f1;
+}
+
+@media screen and (max-width: 921px){
+    :root{ --font-size: 14px; }
+}
+@media screen and (max-width: 480px){
+    :root{ --root-size: 12px; }
 }
 
 
@@ -15,6 +23,13 @@
 a{
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+}
+body{ 
+    font-family: var(--main-font);
+    font-optical-sizing: auto;
+    background-color: var(--cream);
+    font-weight: 400;
+    color: var(--dark-plum);
 }
 button{cursor: pointer;}
 a:focus, button:focus,
