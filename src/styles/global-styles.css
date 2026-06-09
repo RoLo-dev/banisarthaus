@@ -3,6 +3,7 @@
     --main-font: "Google Sans", sans-serif;
     --secondary-font: "Playfair Display", serif;
     --dark-pink: #bb8588;
+    --soft-gray: #eee7e7;
     --dark-plum: #4c3842;
     --cream: #f7f5f1;
 }
@@ -58,3 +59,47 @@ h2{
     max-width: 1200px;
 }
 .section-padding{padding: 5.5rem 0;}
+
+.pink-cta{
+    background-color: var(--dark-pink);
+    text-decoration: none;
+    border-radius: 7px;
+    display: block;
+    max-width: 225px;
+    min-width: 190px;
+    padding: 1rem 0;
+    text-align: center;
+    color: transparent;
+    font-weight: 700;
+    width: auto;
+    letter-spacing: 1px;
+    position: relative;
+    border: none;
+}
+.pink-cta::before{
+    content: '';
+    width: 0;
+    height: 100%;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark-plum);
+    transition: all 0.2s ease-in;
+}
+.pink-cta::after{
+    color: #fff;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transition: all 0.3s ease-in;
+}
+.pink-cta:hover::before{
+    width: 100%;
+}
+.pink-cta:hover::after{
+    width: 100%;
+    color: #fff;
+}

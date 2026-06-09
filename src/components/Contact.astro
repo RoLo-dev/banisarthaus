@@ -72,7 +72,7 @@
 						</div>
 					</div>
 
-					<div class="formSimplify">
+					<!-- <div class="formSimplify">
 						<div>
 							<label for="date">Due date:</label>
 							<span id="date-errorMsg" class="form-error">Enter due date</span>
@@ -84,9 +84,9 @@
 							<input id="time" type="time" name="">
 							<input type="hidden" id="formattedTime" name="time">
 						</div>
-					</div>
+					</div> -->
 
-					<div class="formSimplify">
+					<!-- <div class="formSimplify">
 						<div>
 							<label for="servings">Servings needed:</label>
 							<span id="servings-errorMsg" class="form-error">How many servings?</span>
@@ -95,7 +95,7 @@
 						<div>
 							<input type="file" class="file-upload" name="attachment" accept="image/png, image/jpeg, image/jpg">
 						</div>
-					</div>
+					</div> -->
 
 					<div>
 						<label for="message">Message:</label>
@@ -118,7 +118,49 @@
     h3{margin-bottom: 1rem;}
     h4{margin-bottom: 5px;}
     .info-container{
-        margin-top: 3rem;
+        margin-top: 6rem;
         display: flex;
+        justify-content: space-evenly;
     }
+
+
+
+    form{
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem 0;
+	}
+    form label{font-weight: 500;}
+	form label, form input, form textarea{
+		width: 100%;
+		display: block;
+		color: var(--dark-plum);
+	}
+    form input, form textarea{
+		font-size: 1.1rem;
+		border: 0;
+		background-color: var(--soft-gray);
+	}
+    form input:active, form textarea:active,
+	form input:focus, form textarea:focus{
+		background-color: #fff;
+	}
+	form input{
+		padding: 0 5px;
+		height: 2.75rem;
+	}
+	form textarea{
+		height: 10rem;
+		padding: 5px;
+	}
+
+    .formSimplify{
+		display: flex;
+        /* flex-direction: column; */
+		align-items: center;
+		justify-content: space-between;
+	}
+    .formSimplify div{width: 48%;}
+	.form-error{display: none;}
+	.submit-btn::after{content: 'SUBMIT';}
 </style>
