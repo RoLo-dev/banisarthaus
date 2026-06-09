@@ -21,7 +21,7 @@
                     </li>
                     <li>
                         <h4>Store Hours</h4>
-                        <ul>
+                        <ul class="infoSec-hours">
                             <li>
                                 <span>Monday</span>
                                 <span>CLOSED</span>
@@ -115,13 +115,27 @@
         text-align: center;
         margin-bottom: 1.5rem;
     }
-    h3{margin-bottom: 1rem;}
+    h3{margin-bottom: 2rem;}
     h4{margin-bottom: 5px;}
     .info-container{
         margin-top: 6rem;
         display: flex;
         justify-content: space-evenly;
     }
+    .info-container .col-one{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-container .col-two{width:50%;}
+    .col-one ul li{
+        list-style: none;
+        margin-bottom: 1.5rem;
+    }
+    .col-one ul li a{color: var(--dark-plum);}
+    .col-one ul li:last-child{margin-bottom: 0;}
+    .infoSec-hours li{margin-bottom: 6px !important;}
 
 
 
@@ -155,8 +169,8 @@
 	}
 
     .formSimplify{
+        min-width: 315px;
 		display: flex;
-        /* flex-direction: column; */
 		align-items: center;
 		justify-content: space-between;
 	}

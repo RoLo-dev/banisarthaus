@@ -1,7 +1,7 @@
 :root{
     --font-size: 16px;
     --main-font: "Google Sans", sans-serif;
-    --secondary-font: "Playfair Display", serif;
+    --secondary-font: "Gloock", serif;
     --dark-pink: #bb8588;
     --soft-gray: #eee7e7;
     --dark-plum: #4c3842;
@@ -12,7 +12,7 @@
     :root{ --font-size: 14px; }
 }
 @media screen and (max-width: 480px){
-    :root{ --root-size: 12px; }
+    :root{ --font-size: 12px; }
 }
 
 
@@ -21,7 +21,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-html{scroll-behavior: smooth;}
+html{
+    scroll-behavior: smooth;
+    font-size: var(--font-size);
+    font-optical-sizing: auto;
+}
 a{
     text-decoration: none;
     transition: all 0.2s ease-in-out;
@@ -41,6 +45,7 @@ form input:focus, form textarea:focus{
 h2{
     font-family: var(--secondary-font);
     font-size: 2.75rem;
+    font-weight: 400;
 }
 .pics{
     display: block;
