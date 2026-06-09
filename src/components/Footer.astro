@@ -8,26 +8,12 @@
             <img loading="lazy" src={logo.src} alt="Bani bakery logo" class="pics">
         </a>
         <div class="ftLinks">
-            <h4>Bani's Art Haus</h4>
-            <ul>
-                <li><a href="/#about" title="About" aria-label="Link to about section">About</a></li>
-                <li><a href="/#services" title="Services link" aria-label="Link to services section">Services</a></li>
-                <li><a href="/#contact" title="Contact link" aria-label="Link to contact section">Contact</a></li>
-            </ul>
-        </div>
-        <div class="business-info">
-            <div class="business-contact">
-                <h4>Contact</h4>
+            <div>
+                <h4>Bani's Art Haus</h4>
                 <ul>
-                    <li>
-                        <a href="mailto:banibakery@gmail.com" title="Email" aria-label="Email banibakery@gmail.com"> banibakery@gmail.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:7142495911" title="Phone number" aria-label="Phone number 7142495911">(714) 249 - 5911</a>
-                    </li>
-                    <li>
-                        <a href="https://goo.gl/maps/XsePsz1xZJ2xge2i8" title="Bani's Art Haus address link" aria-label="Google map link for Bani's Art Haus address 7561 Center Ave Suite 7 Huntington Beach, CA 92647" target="_blank">7561 Center Ave Suite 7<br/> Huntington Beach, CA 92647</a>
-                    </li>
+                    <li><a href="/#about" title="About" aria-label="Link to about section">About</a></li>
+                    <li><a href="/#services" title="Services link" aria-label="Link to services section">Services</a></li>
+                    <li><a href="/#contact" title="Contact link" aria-label="Link to contact section">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-social">
@@ -44,6 +30,20 @@
                     </li> -->
                 </ul>
             </div>
+        </div>
+        <div class="business-info">
+            <h4>Contact</h4>
+            <ul>
+                <li>
+                    <a href="mailto:banibakery@gmail.com" title="Email" aria-label="Email banibakery@gmail.com"> banibakery@gmail.com</a>
+                </li>
+                <li>
+                    <a href="tel:7142495911" title="Phone number" aria-label="Phone number 7142495911">(714) 249 - 5911</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/XsePsz1xZJ2xge2i8" title="Bani's Art Haus address link" aria-label="Google map link for Bani's Art Haus address 7561 Center Ave Suite 7 Huntington Beach, CA 92647" target="_blank">7561 Center Ave Suite 7<br/> Huntington Beach, CA 92647</a>
+                </li>
+            </ul>
         </div>
         <div class="store-hours">
             <h4>Store Hours</h4>
@@ -74,6 +74,58 @@
         /* color: var(--cream); */
         color: #fff;
     }
+    .footer-container .footer-logo{
+        display: block;
+        width: 250px;
+    }
+    /* .footer-container .footer-logo img{object-fit: contain;} */
+    .footer-container{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem 1.5rem;
+    }
+    .footer-container a, .footer-container ul li{
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+    }
+    .footer-container a:hover{color: var(--dark-pink);}
+    .footer-container ul li{margin-bottom: 7px;}
+    .footer-container ul li:last-child{margin-bottom: 0;}
+    .footer-container h4{margin-bottom: 12px;color: #fff;}
+    .footer-container .store-hours ul{
+        max-width: 250px;
+        min-width: 190px;
+    }
+    .footer-container .store-hours ul li{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-social{margin-top: 2.25rem;}
+    .footer-social ul li{
+        display: inline-block;
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+    .footer-social ul li a{font-size: 1.25rem;}
+    .footer-social ul li:last-child{margin-right: 0;}
+    footer p{
+        text-align: center;
+        color: #fff;
+        margin-top: 2rem;
+    }
+
+    @media screen and (max-width: 750px){
+        .footer-container{gap: 2rem 1.5rem;}
+		.footer-container .footer-logo{width: 100%;}
+        .footer-container .footer-logo img{
+            width: 250px;
+            margin: 0 auto;
+        }
+	}
 </style>
 
 <script>
