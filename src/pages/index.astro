@@ -5,6 +5,10 @@
 	import Footer from '../components/Footer.astro';
 
 	import HeroImage from '../assets/images/ceramic-painting-hero.png';
+	import Showcase01 from '../assets/images/showcase01.webp';
+	import Showcase02 from '../assets/images/showcase02.webp';
+	import Showcase03 from '../assets/images/showcase03.webp';
+	import Showcase04 from '../assets/images/showcase04.webp';
 ---
 
 <Layout>
@@ -20,6 +24,21 @@
 
         </div>
     </section>
+
+	<div class=" showcase-container section-padding">
+		<figure>
+			<img class="pics" src={Showcase01.src} alt="Child painting a ceramic piece">
+		</figure>
+		<figure>
+			<img class="pics" src={Showcase02.src} alt="Child painting a ceramic piece">
+		</figure>
+		<figure>
+			<img class="pics" src={Showcase03.src} alt="Child painting a ceramic piece">
+		</figure>
+		<figure>
+			<img class="pics" src={Showcase04.src} alt="Child painting a ceramic piece">
+		</figure>
+	</div>
 
 	<Contact />
 
@@ -53,4 +72,10 @@
 		width: 50%;
 		height: 100%;
 	}
+
+	.showcase-container{
+		display: flex;
+		justify-content: flex-start;
+	}
+
 </style>
