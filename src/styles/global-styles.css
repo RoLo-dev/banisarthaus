@@ -8,14 +8,6 @@
     --cream: #f7f5f1;
 }
 
-@media screen and (max-width: 921px){
-    :root{ --font-size: 14px; }
-}
-@media screen and (max-width: 480px){
-    :root{ --font-size: 12px; }
-}
-
-
 *{
     padding: 0;
     margin: 0;
@@ -111,4 +103,12 @@ p{
 .pink-cta:hover::after{
     width: 100%;
     color: #fff;
+}
+
+@media screen and (max-width: 921px){
+    :root{ --font-size: 14px; }
+    .section-padding{padding: 4rem 0;}
+}
+@media screen and (max-width: 480px){
+    :root{ --font-size: 12px; }
 }

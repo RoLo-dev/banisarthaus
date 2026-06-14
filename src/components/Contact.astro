@@ -6,7 +6,7 @@
         <div class="info-container">
             <div class="col col-one">
                 <!-- <h3>Location Info</h3> -->
-                <ul>
+                <ul class="haus-info">
                     <li>
                         <h4>Email</h4>
                         <a href="mailto:banibakery@gmail.com" title="Email" aria-label="Email banibakery@gmail.com"> banibakery@gmail.com</a>
@@ -42,7 +42,6 @@
                 <form action="https://formsubmit.co/banibakery@gmail.com" enctype="multipart/form-data" method="POST" id="contact-form">
 					<input type="hidden" name="_template" value="table">
 					<input type="text" name="_honey" style="display:none">
-					<!-- <input type="hidden" name="subject" value="New subject from %{formName} (%{submissionId})" /> -->
 					<input type="hidden" id="subject" name="_subject" value="Contact form submission!">
 					<input type="hidden" name="form-name" value="contact">
 
@@ -71,31 +70,6 @@
 							<input type="email" name="emailConfirm" id="emailConfirm">
 						</div>
 					</div>
-
-					<!-- <div class="formSimplify">
-						<div>
-							<label for="date">Due date:</label>
-							<span id="date-errorMsg" class="form-error">Enter due date</span>
-							<input id="date" type="date" name="date" required>
-						</div>
-						<div>
-							<label for="time">Pickup Time:</label>
-							<span id="time-errorMsg" class="form-error">Enter pickup time</span>
-							<input id="time" type="time" name="">
-							<input type="hidden" id="formattedTime" name="time">
-						</div>
-					</div> -->
-
-					<!-- <div class="formSimplify">
-						<div>
-							<label for="servings">Servings needed:</label>
-							<span id="servings-errorMsg" class="form-error">How many servings?</span>
-							<input id="servings" type="number" name="servings" required>
-						</div>
-						<div>
-							<input type="file" class="file-upload" name="attachment" accept="image/png, image/jpeg, image/jpg">
-						</div>
-					</div> -->
 
 					<div>
 						<label for="message">Message:</label>
@@ -177,4 +151,20 @@
     .formSimplify div{width: 48%;}
 	.form-error{display: none;}
 	.submit-btn::after{content: 'SUBMIT';}
+
+    @media screen and (max-width: 680px){
+        .info-container{
+            margin-top:3.75rem;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .info-container .col{width: 100%;}
+        .info-container .col-one{margin-bottom: 3rem;}
+        .col-one .haus-info{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+	}
+
 </style>
