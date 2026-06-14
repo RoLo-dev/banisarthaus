@@ -4,14 +4,14 @@
 
 <header class="header">
     <div class="wrapper header-wrapper">
-        <figure class="logo">
+        <a href="/" class="logo">
             <img class="pics" src={logo.src} alt="Bani's Art Haus logo">
         </figure>
     
         <nav class="nav">
-            <a href="#">About</a>
+            <a href="#about">About</a>
             <a href="#">Services</a>
-            <a href="#">Contact Us</a>
+            <a href="#contact">Contact</a>
         </nav>
     
         <!-- <a href="#" class="btn-contact pink-cta">Contact</a> -->
@@ -51,6 +51,13 @@
         letter-spacing: .05rem;
     }
     .btn-contact::after{content: 'CONTACT';}
+
+    @media screen and (max-width: 680px){
+        .header-wrapper{
+            flex-direction: column;
+            gap: 2rem 0;
+        }
+    }
 
 
 </style>
