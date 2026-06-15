@@ -6,7 +6,7 @@
     <div class="wrapper header-wrapper">
         <a href="/" class="logo">
             <img class="pics" src={logo.src} alt="Bani's Art Haus logo">
-        </figure>
+        </a>
     
         <nav class="nav">
             <a href="#about">About</a>
@@ -30,7 +30,10 @@
         align-items: center;
         justify-content: space-between;
     }
-    .logo{width: 220px;}
+    .logo{
+        display: block;
+        width: 220px;
+    }
     .nav{
         max-width: 400px;
         display: flex;
