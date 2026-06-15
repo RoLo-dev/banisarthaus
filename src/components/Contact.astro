@@ -189,3 +189,45 @@
     }
 
 </style>
+
+<script>
+	// let form = document.getElementById('contact-form');
+	let nameValue = document.getElementById('name')
+	let emailInput = document.getElementById('email');
+	let emailConfirm = document.getElementById('emailConfirm');
+	let emailErrorMsg = document.getElementById('email-errorMsg')
+	let emailConfirmErrorMsg = document.getElementById('emailConfirm-errorMsg');
+	let subject = document.getElementById("subject")
+	let timeInput = document.getElementById("time")
+
+	document.querySelector('.submit-btn')?.addEventListener('click', validateForm)
+	document.querySelector('.submit-btn')?.addEventListener('keydown', (event) =>{
+		if(event.key == 13){
+			validateForm();
+		}
+	});
+
+	function formatTime12Hour(time) {
+		let [hours, minutes] = time.split(":").map(Number);
+		let amPm = hours >= 12 ? "PM" : "AM";
+		hours = hours % 12 || 12;
+		return `${hours}:${minutes.toString().padStart(2, "0")} ${amPm}`;
+	}
+
+	function validateForm() {
+		if (emailInput.value == '') {
+			emailErrorMsg.style.display = 'block';
+		}
+		if (emailConfirm.value != emailInput.value) {
+			emailConfirmErrorMsg.style.display = 'block';
+		}
+		else{
+			let timeInputVal = timeInput.value;
+			let formattedTime = formatTime12Hour(timeInputVal);
+			console.log(formattedTime);
+			document.getElementById("formattedTime").value = formattedTime;
+			subject.setAttribute('value', 'New email from ' + nameValue.value)
+			document.getElementById('validation-complete').click()
+		}
+	}
+</script>
