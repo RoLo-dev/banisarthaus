@@ -29,7 +29,29 @@
         </div>
     </section>
 
-	<div class=" showcase-container section-padding">
+	<div class="promo-banner">
+		<div class="small-wrapper">
+			<p><span class="bold">20% OFF</span> In store only ceramics from <span class="bold">June 11th - June 30th</span></p>
+		</div>
+	</div>
+
+	<section id="about" class="wrapper section-padding">
+
+		<h2>About</h2>
+		<p class="about-p">Looking for a fun, creative thing to do? We welcome you to Bani's Art Haus where we offer a relaxed, drop-in experience where everyone can come and paint and create at their own pace. There's no need for experience or reservations required. Bani's Art Haus is perfect for family outings, rainy-day activities, creative dates, and casual group get-togethers.</p>
+
+	</section>
+
+	<section id="services" class="section-padding">
+		<div class="wrapper">
+			<h2>Services</h2>
+			<p style="text-align: center;margin-top:2rem;">Details coming soon</p>
+		</div>
+	</section>
+
+	<Contact />
+
+	<div class=" showcase-container">
 		<figure>
 			<img class="pics" src={Showcase01.src} alt="Child painting a ceramic piece">
 		</figure>
@@ -43,15 +65,6 @@
 			<img class="pics" src={Showcase04.src} alt="Child painting a ceramic piece">
 		</figure>
 	</div>
-
-	<section id="about" class="wrapper section-padding">
-
-		<h2>About</h2>
-		<p class="about-p">Looking for a fun, creative thing to do? We welcome you to Bani's Art Haus where we offer a relaxed, drop-in experience where everyone can come and paint and create at their own pace. There's no need for experience or reservations required. Bani's Art Haus is perfect for family outings, rainy-day activities, creative dates, and casual group get-togethers.</p>
-
-	</section>
-
-	<Contact />
 
 
 	<Footer />
@@ -101,6 +114,16 @@
 		width: 50%;
 		height: 100%;
 	} */
+
+	.promo-banner{
+        padding: 1.5rem 0;
+        color: #fff;
+        background-color: var(--dark-plum);
+    }
+    .promo-banner p{
+        font-size: 1.125rem;
+        text-align: center;
+    }
 
 	.showcase-container{
 		display: grid;
