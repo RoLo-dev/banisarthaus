@@ -5,10 +5,15 @@
 	import Footer from '../components/Footer.astro';
 
 	import HeroImage from '../assets/images/store_front.jpg';
-	import Showcase01 from '../assets/images/inside_store-01.jpg';
-	import Showcase02 from '../assets/images/inside_store-02.jpg';
-	import Showcase03 from '../assets/images/inside_store-03.jpg';
-	import Showcase04 from '../assets/images/inside_store-04.jpg';
+	import Showcase01 from '../assets/images/showcase-01.jpg';
+	import Showcase02 from '../assets/images/showcase-02.jpg';
+	import Showcase03 from '../assets/images/showcase-03.jpg';
+	import Showcase04 from '../assets/images/showcase-04.jpg';
+
+	import InsideStore01 from '../assets/images/inside_store-01.jpg';
+	import InsideStore02 from '../assets/images/inside_store-02.jpg';
+	import InsideStore03 from '../assets/images/inside_store-03.jpg';
+	import InsideStore04 from '../assets/images/inside_store-04.jpg';
 ---
 
 <Layout>
@@ -42,15 +47,6 @@
 
 	</section>
 
-	<section id="services" class="section-padding">
-		<div class="wrapper">
-			<h2>Services</h2>
-			<p style="text-align: center;margin-top:2rem;">Details coming soon</p>
-		</div>
-	</section>
-
-	<Contact />
-
 	<div class=" showcase-container">
 		<figure>
 			<img class="pics" src={Showcase01.src} alt="Child painting a ceramic piece">
@@ -63,6 +59,30 @@
 		</figure>
 		<figure>
 			<img class="pics" src={Showcase04.src} alt="Child painting a ceramic piece">
+		</figure>
+	</div>
+
+	<section id="services" class="section-padding">
+		<div class="wrapper">
+			<h2>Services</h2>
+			<p style="text-align: center;margin-top:2rem;">Details coming soon</p>
+		</div>
+	</section>
+
+	<Contact />
+
+	<div class=" showcase-container">
+		<figure>
+			<img class="pics" src={InsideStore01.src} alt="Child painting a ceramic piece">
+		</figure>
+		<figure>
+			<img class="pics" src={InsideStore02.src} alt="Child painting a ceramic piece">
+		</figure>
+		<figure>
+			<img class="pics" src={InsideStore03.src} alt="Child painting a ceramic piece">
+		</figure>
+		<figure>
+			<img class="pics" src={InsideStore04.src} alt="Child painting a ceramic piece">
 		</figure>
 	</div>
 
