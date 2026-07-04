@@ -92,7 +92,7 @@
 
 <style>
 	.hero{
-		height: 800px;
+		height: 900px;
 		/* background-image: url('../assets/images/ceramic-painting-hero.png');
 		background-size: cover;
 		background-position: right;
@@ -153,6 +153,7 @@
 	.about-p{margin-top: 2rem;}
 
 	@media screen and (max-width: 1120px){
+		.hero{height: 1500px;}
 		.hero-container{
 			flex-direction: column;
 			justify-content: space-evenly;
@@ -176,16 +177,25 @@
 	}
 
 	@media screen and (max-width: 921px){
+		.hero-container .hero-text{height: 40%;}
+		.hero-container h1{font-size: 4rem;}
+		.hero-container figure{height: 50%;}
+
 		.showcase-container{
 			grid-template-columns: repeat(2,1fr);
 		}
-		.hero{height: 625px;}
+		.hero{height: 1050px;}
 	}
 	@media screen and (max-width: 480px){
-		.hero{height: 500px;}
+		.hero{height: 900px;}
+		.hero-container h1{
+			font-size: 3.5rem;
+			text-align: center;
+		}
 	}
 	@media screen and (max-width: 380px){
-		.hero-container h1{font-size: 4rem;}
+		.hero{height: 850px;}
+		/* .hero-container h1{font-size: 4rem;} */
 		.hero-container .text-container{height: 50%;}
 		.hero-container figure{height: 40%;}
 	}

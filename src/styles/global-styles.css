@@ -112,4 +112,5 @@ p{
 }
 @media screen and (max-width: 480px){
     :root{ --font-size: 13px; }
+    .wrapper{width: 85%;}
 }
