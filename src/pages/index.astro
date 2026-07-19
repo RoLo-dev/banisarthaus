@@ -97,9 +97,11 @@
 		justify-content: space-between;
 		align-items: center;
 		height: 100%;
+		gap: 0 1rem;
 	}
 	.hero-text{
 		width: 40%;
+		min-width: 415px;
 		height: auto;
 		display: flex;
 		flex-direction: column;
@@ -109,12 +111,12 @@
 	.hero-container figure{
 		width: 55%;
 		height: 65vh;
-		max-height: 650px;
+		max-height: 625px;
 		min-height: 380px;
 	}
 	.hero-container h1{
 		font-family: var(--secondary-font);
-		font-size: 4.5rem;
+		font-size: 4rem;
 		margin-bottom: 24px;
 		font-weight: 400;
 	}
@@ -170,7 +172,8 @@
 		.showcase-container figure{ max-height: 250px; }
 	}
 	@media screen and (max-width: 480px){
-		.hero-container h1{ font-size: 3.5rem; }
+		.hero-container h1{ font-size: 3.25rem; }
+		.hero-text{ min-width: auto; }
 		.hero-container figure{
 			height: 40vh;
 			max-height: 475px;
