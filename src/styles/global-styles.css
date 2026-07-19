@@ -51,7 +51,7 @@ p{
     object-fit: cover;
 }
 .wrapper{
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     max-width: 1600px;
 }
@@ -110,7 +110,10 @@ p{
     :root{ --font-size: 14px; }
     .section-padding{padding: 4rem 0;}
 }
+@media screen and (max-width: 765px){
+    .wrapper{ width: 90%; }
+    .small-wrapper{ width:85% }
+}
 @media screen and (max-width: 480px){
-    :root{ --font-size: 13px; }
-    .wrapper{width: 85%;}
+    :root{ --font-size: 13px; }   
 }
