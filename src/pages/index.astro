@@ -10,6 +10,9 @@
 	import Showcase03 from '../assets/images/showcase-03.jpg';
 	import Showcase04 from '../assets/images/showcase-04.jpg';
 
+	import TeaAffairDesktop from '../assets/images/teaAffair-desktop.png';
+	import TeaAffairMobile from '../assets/images/teaAffair-mobile.png';
+
 	import InsideStore01 from '../assets/images/inside_store-01.jpg';
 	import InsideStore02 from '../assets/images/inside_store-02.jpg';
 	import InsideStore03 from '../assets/images/inside_store-03.jpg';
@@ -43,7 +46,7 @@
 	<section id="about" class="small-wrapper section-padding">
 
 		<h2>About</h2>
-		<p class="about-p">Looking for a fun, creative thing to do? We welcome you to Bani's Art Haus where we offer a relaxed, drop-in experience where everyone can come and paint and create at their own pace. There's no need for experience or reservations required. Bani's Art Haus is perfect for family outings, rainy-day activities, creative dates, and casual group get-togethers. <br /><br />Whether you're celebrating a special occasion or simply looking for a unique way to spend an afternoon, we're here to help you create something meaningful.</p>
+		<p class="sec-intro-p">Looking for a fun, creative thing to do? We welcome you to Bani's Art Haus where we offer a relaxed, drop-in experience where everyone can come and paint and create at their own pace. There's no need for experience or reservations required. Bani's Art Haus is perfect for family outings, rainy-day activities, creative dates, and casual group get-togethers. <br /><br />Whether you're celebrating a special occasion or simply looking for a unique way to spend an afternoon, we're here to help you create something meaningful.</p>
 
 	</section>
 
@@ -65,7 +68,29 @@
 	<section id="services" class="section-padding">
 		<div class="small-wrapper">
 			<h2>Services</h2>
-			<p style="text-align: center;margin-top:2rem;">Details coming soon</p>
+			<p class="sec-intro-p">Besides painting on ceramics, we also have unfinished wooden pieces to paint and other unique small art pieces to paint or to conserve as is.</p>
+
+			<div class="teaAffair-service service-row">
+				<h3>An Elegant Tea Affair</h3>
+				<p>Share an elegant tea service complete with handcrafted treats while expressing your creativity through ceramic painting. Perfect for catching up with friends, celebrating special occasions, or simply enjoying a relaxing afternoon. Give us a call to make a reservation.</p>
+				<a href="tel:6572273739" 
+					class="pink-cta rsvp-cta"
+					title="Make a Reservation"
+					aria-label="Link will call phone number 6572273739">Make a Reservation</a>
+				<div class="notes-container">
+					<h4>A Note To Our Guests:</h4>
+					<ul>
+						<li>- Please let us know of any food allergies or dietary restrictions.</li>
+						<li>- Advance 2 day notice allows us to prepare with care and consideration.</li>
+						<li>- Menu items may vary slightly based on availability and season.</li>
+						<li>- This package is for dine-in only.</li>
+					</ul>
+				</div>
+				<figure>
+					<img class="pics desktopOnly" src={TeaAffairDesktop.src} alt="Tea Affair">
+					<img class="pics mobileOnly" src={TeaAffairMobile.src} alt="Tea Affair">
+				</figure>
+			</div>
 		</div>
 	</section>
 
@@ -143,7 +168,23 @@
 	.showcase-container figure{ max-height: 350px; }
 
 	/* About Section */
-	.about-p{margin-top: 2rem;}
+	/* .about-p{margin-top: 2rem;} */
+
+	/* Services Section */
+	#services .sec-intro-p{text-align: center;}
+	.teaAffair-service{margin-top: 3rem;}
+	.service-row h3{margin-bottom: 10px;}
+	.service-row p{margin-bottom: 2rem;}
+	.rsvp-cta::after{content: 'Make a Reservation';}
+
+	.notes-container{
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+	.notes-container h4{margin-bottom: 10px;}
+	.notes-container ul li{margin-bottom: 10px;}
+	.notes-container ul li:last-child{margin-bottom: 0;}
+
 
 	@media screen and (max-width: 1120px){
 		.hero-container{

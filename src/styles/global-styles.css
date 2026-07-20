@@ -40,9 +40,8 @@ h2{
     font-weight: 400;
     text-align: center;
 }
-p{
-    line-height: 1.65;
-}
+p{line-height: 1.65;}
+ul li{list-style: none;}
 .bold{font-weight: bold;}
 .pics{
     display: block;
@@ -61,6 +60,7 @@ p{
     max-width: 1200px;
 }
 .section-padding{padding: 5.5rem 0;}
+.sec-intro-p{margin-top: 2rem;}
 
 .pink-cta{
     background-color: var(--dark-pink);
@@ -98,17 +98,19 @@ p{
     left: 0;
     transition: all 0.3s ease-in;
 }
-.pink-cta:hover::before{
-    width: 100%;
-}
+.pink-cta:hover::before{width: 100%;}
 .pink-cta:hover::after{
     width: 100%;
     color: #fff;
 }
 
+@media screen and (min-width: 922px){
+    .mobileOnly{display: none;}
+}
 @media screen and (max-width: 921px){
     :root{ --font-size: 14px; }
     .section-padding{padding: 4rem 0;}
+    .desktopOnly{display: none;}
 }
 @media screen and (max-width: 765px){
     .wrapper{ width: 90%; }
