@@ -13,6 +13,9 @@
 	import TeaAffairDesktop from '../assets/images/teaAffair-desktop.png';
 	import TeaAffairMobile from '../assets/images/teaAffair-mobile.png';
 
+	import CakeWorkshopDesktop from '../assets/images/cakeDecorating-workshop-desktop.jpg';
+	import CakeWorkshopMobile from '../assets/images/cakeDecorating-workshop-mobile.jpg';
+
 	import InsideStore01 from '../assets/images/inside_store-01.jpg';
 	import InsideStore02 from '../assets/images/inside_store-02.jpg';
 	import InsideStore03 from '../assets/images/inside_store-03.jpg';
@@ -88,6 +91,28 @@
 						<li>- Please let us know of any food allergies or dietary restrictions.</li>
 						<li>- Advance 2 day notice allows us to prepare with care and consideration.</li>
 						<li>- Menu items may vary slightly based on availability and season.</li>
+						<li>- This package is for dine-in only.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="teaAffair-service service-row">
+				<figure>
+					<img class="pics desktopOnly" src={CakeWorkshopDesktop.src} alt="Cake Workshop">
+					<img class="pics mobileOnly" src={CakeWorkshopMobile.src} alt="Cake Workshop">
+				</figure>
+
+				<h3>Sweet Moments Start Here</h3>
+				<p>Discover the joy of cake decorating in a relaxed and welcoming environment. Perfect for friends, families, couples, or solo creatives, our workshop makes it easy for anyone to create a cake they'll be proud to show off and even happier to eat.. Give us a call to make a reservation.</p>
+				<a href="tel:6572273739"
+					class="pink-cta rsvp-cta"
+					title="Make a Reservation"
+					aria-label="Link will call phone number 6572273739">Make a Reservation</a>
+				<div class="notes-container">
+					<h4>Important Note To Our Guests:</h4>
+					<ul>
+						<li>- Please let us know of any food allergies or dietary restrictions.</li>
+						<li>- Advance 2 day notice allows us to prepare with care and consideration.</li>
 						<li>- This package is for dine-in only.</li>
 					</ul>
 				</div>
@@ -173,7 +198,8 @@
 
 	/* Services Section */
 	#services .sec-intro-p{text-align: center;}
-	.teaAffair-service{margin-top: 3rem;}
+	.service-row{margin: 3rem 0;}
+	.service-row:last-of-type{margin-bottom: 0;}
 	.service-row h3{
 		margin-top: 2rem;
 		margin-bottom: 10px;
