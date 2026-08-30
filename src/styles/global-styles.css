@@ -5,7 +5,14 @@
     --dark-pink: #bb8588;
     --soft-gray: #eee7e7;
     --dark-plum: #4c3842;
-    --cream: #f7f5f1;
+    --cream: #F6F1E7;
+    --cream-deep: #EFE7D8;
+
+    --plum: #4A2E33;
+    --plum-soft: #6B4A50;
+    --rose: #C98A96;
+    --rose-deep: #B06E7B;
+    --rose-pale: #F2DCE0;
 }
 
 *{
@@ -36,7 +43,7 @@ form input:focus, form textarea:focus{
 }
 h2{
     font-family: var(--secondary-font);
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     font-weight: 400;
     text-align: center;
 }
@@ -102,6 +109,14 @@ ul li{list-style: none;}
 .pink-cta:hover::after{
     width: 100%;
     color: #fff;
+}
+.eyebrow{
+    font-size:0.925rem;
+    letter-spacing:0.15rem;
+    text-transform:uppercase;
+    color:var(--rose-deep);
+    text-align: center;
+    margin-bottom: 0.125rem;
 }
 
 @media screen and (min-width: 922px){

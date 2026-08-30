@@ -10,10 +10,10 @@
 	import Showcase03 from '../assets/images/showcase-03.jpg';
 	import Showcase04 from '../assets/images/showcase-04.jpg';
 
-	import TeaAffairDesktop from '../assets/images/teaAffair-desktop.png';
+	import TeaAffairDesktop from '../assets/images/tea-set.jpg';
 	import TeaAffairMobile from '../assets/images/teaAffair-mobile.png';
 
-	import CakeWorkshopDesktop from '../assets/images/cakeDecorating-workshop-desktop.jpg';
+	import CakeWorkshopDesktop from '../assets/images/cake-decor.jpg';
 	import CakeWorkshopMobile from '../assets/images/cakeDecorating-workshop-mobile.jpg';
 
 	import InsideStore01 from '../assets/images/inside_store-01.jpg';
@@ -29,12 +29,15 @@
         <div class="hero-container">
 
 			<div class="hero-text">
-				<h1>Paint. Create. Make It Yours.</h1>
-				<p>A creative studio where you can transform blank ceramics into personalized works of art.</p>
+				<h1>Paint. Create.<br />Make It Yours.</h1>
+				<p>A creative studio where you can transform blank ceramics into personalized works of art. Drop in anytime, no experience or reservation needed and paint your own custom ceramic piece.</p>
 			</div>
 
 			<figure>
-				<img src={HeroImage.src} alt="Vector characters painting ceramics" class="pics">
+				<img src={HeroImage.src} 
+					style="border-radius: 10px;"
+					alt="Vector characters painting ceramics" 
+					class="pics">
 			</figure>
 
         </div>
@@ -47,33 +50,136 @@
 	</div> -->
 
 	<section id="about" class="small-wrapper section-padding">
+		<p class="eyebrow">About the Studio</p>
+		<h2>A relaxed space to create something meaningful</h2>
+		<p class="sec-intro-p about-p">Looking for a fun, creative thing to do? We offer a relaxed, drop-in experience where everyone can come and paint and create at their own pace. A perfect place for family outings, rainy-day activities, creative dates, and casual group get togethers.</p>
 
-		<h2>About</h2>
-		<p class="sec-intro-p">Looking for a fun, creative thing to do? We welcome you to Bani's Art Haus where we offer a relaxed, drop-in experience where everyone can come and paint and create at their own pace. There's no need for experience or reservations required. Bani's Art Haus is perfect for family outings, rainy-day activities, creative dates, and casual group get-togethers. <br /><br />Whether you're celebrating a special occasion or simply looking for a unique way to spend an afternoon, we're here to help you create something meaningful.</p>
+		<div class="facts">
+			<div class="fact">
+				<div class="fact-mark">✓</div>
+				<h4>No Experience Needed</h4>
+				<p>We'll guide you every step of the way</p>
+			</div>
+			<div class="fact">
+				<div class="fact-mark">✓</div>
+				<h4>Drop-In, No Reservation</h4>
+				<p>Come as you are, whenever works for you</p>
+			</div>
+			<div class="fact">
+				<div class="fact-mark">✓</div>
+				<h4>Great For Groups</h4>
+				<p>Perfect for families, dates, and gatherings</p>
+			</div>
+		</div>
+
+		<div class="showcase-container showcase-gap">
+			<figure>
+				<img class="pics" src={Showcase01.src} alt="Child painting a ceramic piece">
+			</figure>
+			<figure>
+				<img class="pics" src={Showcase02.src} alt="Child painting a ceramic piece">
+			</figure>
+			<figure>
+				<img class="pics" src={Showcase03.src} alt="Child painting a ceramic piece">
+			</figure>
+			<figure>
+				<img class="pics" src={Showcase04.src} alt="Child painting a ceramic piece">
+			</figure>
+		</div>
 
 	</section>
 
-	<div class=" showcase-container">
-		<figure>
-			<img class="pics" src={Showcase01.src} alt="Child painting a ceramic piece">
-		</figure>
-		<figure>
-			<img class="pics" src={Showcase02.src} alt="Child painting a ceramic piece">
-		</figure>
-		<figure>
-			<img class="pics" src={Showcase03.src} alt="Child painting a ceramic piece">
-		</figure>
-		<figure>
-			<img class="pics" src={Showcase04.src} alt="Child painting a ceramic piece">
-		</figure>
-	</div>
-
 	<section id="services" class="section-padding">
 		<div class="small-wrapper">
-			<h2>Services</h2>
-			<p class="sec-intro-p">Besides painting on ceramics, we also have unfinished wooden pieces to paint and other unique small art pieces to paint or to conserve as is.</p>
+			<!-- <div class="eyebrow">services</div>
+			<h2>Signature Experiences</h2>
+			<p class="sec-intro-p">Besides painting on ceramics, we also have unfinished wooden pieces to paint and other unique small art pieces to paint or to conserve as is.</p> -->
 
-			<div class="teaAffair-service service-row">
+			<div class="section-head">
+				<div class="eyebrow">Services</div>
+				<h2>Signature Experiences</h2>
+				<p>Beyond our walk-in ceramic painting studio, we host two reservation based experiences for special occasions, celebrations, and gatherings with friends. We also offer unfinished wooden pieces to paint or to conserve as is.</p>
+			</div>
+
+			<div class="service-cards">
+				<!-- Tea Affair -->
+				<div class="card">
+					<figure class="photo photo-placeholder">
+						<img src={TeaAffairDesktop.src}
+							alt="Tea Affair"
+							class="pics">
+					</figure>
+					<div class="content">
+						<div class="badge-row">
+							<span class="tag">Reservation Required</span>
+						</div>
+						<h3 class="card-title">An Elegant Tea Affair</h3>
+						<div class="price-line"><b>$65</b> / set (2 persons) &nbsp;·&nbsp; +$30 each add'l guest &nbsp;·&nbsp; max 4 per set</div>
+						<p class="desc">Share a proper tea service with handcrafted treats alongside your ceramic painting. Perfect for catching up with friends, marking a special occasion, or a relaxing afternoon out.</p>
+						<ul class="includes">
+							<li>1 pot of tea (Oolong, Black, White, Herbal or Sugar Cube &amp; Cream)</li>
+							<li>2 tea sandwiches (cucumber, ham &amp; cheese, egg salad, or chicken pesto)</li>
+							<li>Scone with whipped butter &amp; jam</li>
+							<li>2 macarons</li>
+							<li>Butter cookies &amp; banana bread slices</li>
+							<li>Madeleines &amp; seasonal fruit cup</li>
+						</ul>
+
+						<a href="tel:6572273739" 
+							class="pink-cta rsvp-cta"
+							title="Make a Reservation"
+							aria-label="Link will call phone number 6572273739">Make a Reservation</a>
+						<details>
+							<summary>Good to know before booking</summary>
+							<ul class="fine-print">
+								<li>- Let us know of any food allergies or dietary restrictions</li>
+								<li>- Please book at least 2 days in advance</li>
+								<li>- Menu items may vary slightly by season &amp; availability</li>
+								<li>- Dine-in only</li>
+							</ul>
+						</details>
+					</div>
+				</div>
+
+				 <!-- Cake Decorating -->
+				<div class="card reverse">
+					<figure class="photo photo-placeholder">
+						<img src={CakeWorkshopDesktop.src}
+							style="object-position: left;"
+							alt="Cake Workshop"
+							class="pics cakeWorkShop">
+					</figure>
+					<div class="content">
+						<div class="badge-row">
+						<span class="tag">Reservation Required</span>
+						<!-- <span class="tag outline">No experience needed</span> -->
+						</div>
+						<h3 class="card-title">Cake Decorating Workshop</h3>
+						<div class="price-line"><b>$65</b> / person &nbsp;·&nbsp; 20% off parties of 4+</div>
+						<p class="desc">A fun, guided, hands-on session, decorate your own cake to take home. Great for friends, families, couples, or a solo creative afternoon. We'll walk you through every step.</p>
+						<ul class="includes">
+							<li>4" circle cake, ready to decorate</li>
+							<li>Buttercream in 5 colors</li>
+							<li>3 types of sprinkles</li>
+							<li>Up to 2 hours of studio time</li>
+						</ul>
+						<a href="tel:6572273739" 
+							class="pink-cta rsvp-cta"
+							title="Make a Reservation"
+							aria-label="Link will call phone number 6572273739">Make a Reservation</a>
+						<details>
+						<summary>Good to know before booking</summary>
+						<ul class="fine-print">
+							<li>- Let us know of any food allergies or dietary restrictions</li>
+							<li>- Please book at least 2 days in advance</li>
+							<li>- This package is for dine-in only</li>
+						</ul>
+						</details>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="teaAffair-service service-row">
 				<figure>
 					<img class="pics desktopOnly" src={TeaAffairDesktop.src} alt="Tea Affair">
 					<img class="pics mobileOnly" src={TeaAffairMobile.src} alt="Tea Affair">
@@ -94,9 +200,9 @@
 						<li>- This package is for dine-in only.</li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 
-			<div class="teaAffair-service service-row">
+			<!-- <div class="teaAffair-service service-row">
 				<figure>
 					<img class="pics desktopOnly" src={CakeWorkshopDesktop.src} alt="Cake Workshop">
 					<img class="pics mobileOnly" src={CakeWorkshopMobile.src} alt="Cake Workshop">
@@ -116,7 +222,7 @@
 						<li>- This package is for dine-in only.</li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 
@@ -149,31 +255,30 @@
 		align-items: center;
 		height: 100%;
 		gap: 0 1rem;
+		padding: 3rem 0;
 	}
 	.hero-text{
-		width: 40%;
+		width: 50%;
 		min-width: 415px;
 		height: auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 4.5rem 0;
 	}
 	.hero-container figure{
-		width: 55%;
-		height: 65vh;
+		width: 45%;
+		height: 38vh;
 		max-height: 625px;
-		min-height: 380px;
 	}
 	.hero-container h1{
 		font-family: var(--secondary-font);
-		font-size: 4rem;
+		font-size: 3.25rem;
 		margin-bottom: 24px;
 		font-weight: 400;
 	}
 	.hero-container .hero-text p{
 		padding-right: 1rem;
-		font-size: 1.5rem;
+		font-size: 1.125rem;
 		line-height: 1.45;
 	}
 
@@ -190,13 +295,52 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 	}
+	.showcase-gap{ gap: 1rem; }
 
 	.showcase-container figure{ max-height: 350px; }
 
 	/* About Section */
-	/* .about-p{margin-top: 2rem;} */
+	.about-p{
+		text-align: center;
+		max-width: 520px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.facts{
+		display:flex;
+		justify-content:center;
+		gap:3rem;
+		margin:4rem 0;
+		flex-wrap:wrap;
+	}
+	.fact{
+		max-width:200px;
+		text-align: center;
+	}
+	.fact-mark{
+		width:34px;
+		height:34px;
+		border-radius:50%;
+		background:var(--rose-pale);
+		margin:0 auto 12px;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		color:var(--rose-deep);
+		font-weight:700;
+		font-size:15px;
+	}
+	.fact h4{
+		margin: 0 0 4px;
+		color: var(--plum);
+	}
+	.fact p{
+		margin: 0;
+		color: var(--plum-soft);
+	}
 
 	/* Services Section */
+	#services{ background-color: var(--cream-deep); }
 	#services .sec-intro-p{text-align: center;}
 	.service-row{margin: 3rem 0;}
 	.service-row:last-of-type{margin-bottom: 0;}
@@ -212,9 +356,159 @@
 	.notes-container ul li{margin-bottom: 10px;}
 	.notes-container ul li:last-child{margin-bottom: 0;}
 
+	.section-head{
+		text-align:center;
+		margin-bottom: 3rem;
+	}
+	.section-head h2{
+		margin: 1rem 0 1.125rem;
+	}
+	.section-head p{
+		max-width:520px;
+		margin:0 auto;
+	}
+
+	.service-cards{
+		display:flex;
+		flex-direction:column;
+		gap: 2.125rem;
+	}
+	.service-cards .card{
+		background:#fff;
+		border-radius:6px;
+		overflow:hidden;
+		display:grid;
+		grid-template-columns:1fr 1.15fr;
+		box-shadow:0 1px 3px rgba(74,46,51,0.06);
+		border:1px solid var(--line);
+	}
+	.card.reverse{ grid-template-columns:1.15fr 1fr; }
+	.card.reverse .photo{ order:2; }
+	.card.reverse .content{ order:1; }
+	.card .photo{
+		min-height:320px;
+		border-radius:0;
+		padding:24px;
+	}
+	.card .photo-label{ font-size:15px; }
+	.content{
+		padding:42px 42px 38px;
+		display:flex;
+		flex-direction:column;
+	}
+	.badge-row{
+		display:flex
+		align-items: center;
+		gap:10px;
+		margin-bottom:14px;
+		flex-wrap:wrap;
+	}
+	.tag{
+		font-size:10.5px;
+		letter-spacing:0.14em;
+		text-transform:uppercase;
+		color:var(--rose-deep);
+		font-weight: 600;
+		background: var(--rose-pale);
+		padding: 5px 11px;
+		border-radius: 20px;
+	}
+	.tag.outline{
+		background:transparent;
+		border:1px solid var(--rose);
+	}
+	.card-title{
+		font-size: 1.65rem;
+		margin: 0 0 6px;
+		font-family: var(--secondary-font);
+	}
+	.price-line{
+		font-size:14px;
+		color:var(--rose-deep);
+		font-weight:500;
+		margin-bottom:16px;
+	}
+	.price-line b{
+		font-size: 18px;
+		color: var(--plum);
+	}
+	.desc{
+		font-size:14px;
+		line-height:1.75;
+		color:var(--plum-soft);
+		margin:0 0 20px;
+	}
+	.includes{
+		margin:0 0 22px;
+		padding:0;
+		list-style:none;
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		gap:9px 18px;
+	}
+	.includes li{
+		font-size:13px;
+		display:flex;
+		align-items:flex-start;
+		gap:8px;
+		line-height:1.5;
+	}
+	.includes li::before{
+		content:"";
+		width:5px; height:5px; border-radius:50%;
+		background:var(--rose);
+		margin-top:6px;
+		flex-shrink:0;
+	}
+	.cta-row{
+		margin-top:auto;
+		padding-top:6px;
+	}
+	details{
+		margin-top:20px;
+		border-top:1px solid var(--line);
+		padding-top:12px;
+	}
+	summary{
+		font-size:12px;
+		color:var(--plum-soft);
+		cursor:pointer;
+		list-style:none;
+		display:flex;
+		align-items:center;
+		gap:6px;
+	}
+	summary::-webkit-details-marker{ display:none; }
+	summary::before{
+		content:"+";
+		color:var(--rose-deep);
+		font-size:15px; 
+		font-weight:600;
+	}
+	details[open] summary::before{ content:"–"; }
+	.fine-print{
+		margin:10px 0 0;
+		padding:0 0 0 14px;
+		font-size:12px;
+		line-height:1.8;
+		color:var(--plum-soft);
+	}
+	.wood-note{
+		max-width:640px;
+		margin:44px auto 0;
+		text-align:center;
+		font-size:13.5px;
+		line-height:1.8;
+		color:var(--plum-soft);
+		font-style:italic;
+		font-family:'Cormorant Garamond', serif;
+		font-size:18px;
+	}
+
 
 	@media screen and (max-width: 1120px){
 		.hero-container{
+			gap: 3rem 0;
 			flex-direction: column;
 			justify-content: space-evenly;
 		}
@@ -232,20 +526,28 @@
 			width: 100%;
 			max-height: 600px;
 		}
+
+		.service-cards .card,
+		.card.reverse{ grid-template-columns: 1fr; }
+		.card.reverse .photo{ order:1; }
+		.card.reverse .content{ order:2; }
+		.content{ padding:30px 26px; }
+		.includes{ grid-template-columns:1fr; }
+		.contact-inner{ grid-template-columns:1fr; gap:40px; }
 	}
 
 	@media screen and (max-width: 921px){
-		.hero-container h1{ font-size: 4rem; }
 		.showcase-container{
 			grid-template-columns: repeat(2,1fr);
+			gap: 0;
 		}
 		.showcase-container figure{ max-height: 250px; }
 	}
 	@media screen and (max-width: 480px){
-		.hero-container h1{ font-size: 3.25rem; }
+		.hero-container h1{ font-size: 3rem; }
 		.hero-text{ min-width: auto; }
 		.hero-container figure{
-			height: 40vh;
+			height: 30vh;
 			max-height: 475px;
 		}
 	}
