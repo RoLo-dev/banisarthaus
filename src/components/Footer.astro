@@ -16,17 +16,7 @@
                     <li><a href="/#contact" title="Contact link" aria-label="Link to contact section">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-social">
-                <h4 class="social">Social</h4>
-                <ul class="socialList">
-                    <!-- <li>
-                        <a href="https://www.facebook.com/banibakery/" title="Facebook" aria-label="Link to facebook page" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    </li> -->
-                    <li>
-                        <a href="https://www.instagram.com/banisarthaus/" title="Instagram" aria-label="Link to instagram page" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                </ul>
-            </div>
+            
         </div>
         <div class="business-info">
             <h4>Contact</h4>
@@ -42,7 +32,18 @@
                 </li>
             </ul>
         </div>
-        <div class="store-hours">
+        <div class="footer-social">
+            <h4 class="social">Social</h4>
+            <ul class="socialList">
+                <!-- <li>
+                    <a href="https://www.facebook.com/banibakery/" title="Facebook" aria-label="Link to facebook page" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </li> -->
+                <li>
+                    <a href="https://www.instagram.com/banisarthaus/" title="Instagram" aria-label="Link to instagram page" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="store-hours" style="display: none;">
             <h4>Store Hours</h4>
             <ul>
                 <li>
@@ -71,15 +72,13 @@
 <style>
     footer{
         background-color: var(--dark-plum);
-        padding: 2rem;
-        /* color: var(--cream); */
+        padding: 3rem;
         color: #fff;
     }
     .footer-container .footer-logo{
         display: block;
-        width: 250px;
+        width: 200px;
     }
-    /* .footer-container .footer-logo img{object-fit: contain;} */
     .footer-container{
         display: flex;
         align-items: flex-start;
@@ -91,11 +90,12 @@
         color: #fff;
         text-decoration: none;
         list-style: none;
+        font-size: 0.9rem;
     }
-    .footer-container a:hover{color: var(--dark-pink);}
-    .footer-container ul li{margin-bottom: 7px;}
-    .footer-container ul li:last-child{margin-bottom: 0;}
-    .footer-container h4{margin-bottom: 12px;color: #fff;}
+    .footer-container a:hover{ color: var(--dark-pink); }
+    .footer-container ul li{ margin-bottom: 10px; }
+    .footer-container ul li:last-child{ margin-bottom: 0; }
+    .footer-container h4{ margin-bottom: 14px;color: #fff; }
     .footer-container .store-hours ul{
         max-width: 250px;
         min-width: 190px;
@@ -105,23 +105,24 @@
         display: flex;
         justify-content: space-between;
     }
-    .footer-social{margin-top: 2.25rem;}
+    /* .footer-social{ margin-top: 2.25rem; } */
     .footer-social ul li{
         display: inline-block;
         margin-right: 1rem;
         margin-bottom: 0;
     }
-    .footer-social ul li a{font-size: 1.25rem;}
-    .footer-social ul li:last-child{margin-right: 0;}
+    .footer-social ul li a{ font-size: 1.25rem; }
+    .footer-social ul li:last-child{ margin-right: 0; }
     footer p{
         text-align: center;
         color: #fff;
-        margin-top: 2rem;
+        margin-top: 4rem;
+        font-size: 0.9rem;
     }
 
     @media screen and (max-width: 750px){
-        .footer-container{gap: 2rem 1.5rem;}
-		.footer-container .footer-logo{width: 100%;}
+        .footer-container{ gap: 2rem 1.5rem; }
+		.footer-container .footer-logo{ width: 100%; }
         .footer-container .footer-logo img{
             width: 250px;
             margin: 0 auto;
