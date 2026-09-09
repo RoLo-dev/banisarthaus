@@ -43,7 +43,20 @@
         </div>
     </section>
 
+	<section class="video-hero">
+		<div class="video-hero__background">
+			<iframe
+				src="https://www.youtube.com/embed/kNIvR064wZo?autoplay=1&mute=1&loop=1&playlist=kNIvR064wZo&controls=0&rel=0&modestbranding=1"
+				title="Background video"
+				frameborder="0"
+				allow="autoplay; encrypted-media"
+				allowfullscreen>
+			</iframe>
+		</div>
+	</section>
+
 	<!-- <div class="promo-banner">
+	 z7uI5FhCggm1GxiI
 		<div class="small-wrapper">
 			<p><span class="bold">20% OFF</span> In store only ceramics from <span class="bold">June 11th - June 30th</span></p>
 		</div>
@@ -280,6 +293,65 @@
 		font-size: 1.125rem;
 		line-height: 1.45;
 	}
+
+
+	/* Video section */
+	.video-hero {
+		position: relative;
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+	}
+
+	/* YouTube video container */
+	.video-hero__background {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	/* YouTube iframe */
+	.video-hero__background iframe {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		/*
+		* 16:9 video
+		*/
+		width: 100vw;
+		height: 56.25vw;
+
+		/*
+		* Make sure the video always
+		* covers the entire section
+		*/
+		min-width: 177.78vh;
+		min-height: 100vh;
+
+		transform: translate(-50%, -50%);
+
+		border: 0;
+		pointer-events: none;
+	}
+
+	@media (max-width: 768px) {
+		.video-hero {
+			height: 400px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.video-hero {
+			height: 300px;
+		}
+	}
+
+
+
+
 
 	.promo-banner{
         padding: 1.5rem 0;
